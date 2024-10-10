@@ -1,15 +1,20 @@
-import {useState} from "react";
-import Usuario from "../interfaces/usuario"
-import PerfilUsuario from "../interfaces/usuario"
-
+import PerfilUsuario from '../interfaces/usuario';
 const PaginaPerfil = () =>{
-    const [usuario, setUsuario] = useState <Usuario>() setUsuario((nome:'Billie Eilish', idade:20, email:))
-   
-    return(
+    
+    const usuario = {
+        nome: 'Maria Fernanda Alves dos Santos',
+        idade: 17,
+        email: 'mariafer@gmail.com',
+        password: '030924',
+        id: 1,
+        tipo: 'adm'
+
+    }
+    return (
         <div>
-            <h1>Página Perfil</h1>
+            <h1>Página de Perfil</h1>
+            <PerfilUsuario usuario={usuario}/>    
         </div>
     )
 }
-
-export default  PaginaPerfil;
+export default PaginaPerfil
