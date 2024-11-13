@@ -19,7 +19,7 @@ export default function Login(){
     };
 
     return(
-        <div>
+        <div className={styles.body}>
             <Button 
             name="Info 6B"
             numero={1}/>
